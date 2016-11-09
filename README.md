@@ -1,7 +1,6 @@
-Ionic 2 App Base
+Ionic 2 Training Demo App
 =====================
 
-This is the base template for Ionic 2 starter apps.
 
 ## Using this project
 
@@ -11,10 +10,15 @@ You'll need the Ionic CLI with support for v2 apps:
 $ npm install -g ionic
 ```
 
-Then run:
+Install project specific dependencies:
 
 ```bash
-$ ionic start myApp
+$ npm install
 ```
 
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/docs/v2/getting-started/) page.
+Serving on the browser:
+
+```bash
+$ ionic serve
+```
+
