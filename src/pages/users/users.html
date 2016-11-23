@@ -8,9 +8,18 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let user of users" (click)="showUserDetails(user)">
-      {{user.userName}}
-      <ion-icon name="arrow-dropright"></ion-icon>
-    </ion-item>
+    <ion-item-sliding *ngFor="let user of users" >
+      <ion-item (click)="showUserDetails(user)">
+        {{user.userName}}
+        <ion-icon name="arrow-dropright" item-right>
+        </ion-icon>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button (click)="showDeleteAlert(user)">
+          <ion-icon name="trash">
+          </ion-icon>
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
   </ion-list>
 </ion-content>
